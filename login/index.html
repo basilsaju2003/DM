@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CodePen - Login/Signup Pure CSS</title>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+	<link rel='stylesheet' href='https://unicons.iconscout.com/release/v2.1.9/css/unicons.css'>
+	<link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+	<!-- partial:index.partial.html -->
+	<div class="section">
+		<div class="container">
+			<div class="row full-height justify-content-center">
+				<div class="col-12 text-center align-self-center py-5">
+					<div class="section pb-5 pt-5 pt-sm-2 text-center">
+						<h6 class="mb-0 pb-3"><span>Log In </span><span>Sign Up</span></h6>
+						<input class="checkbox" type="checkbox" id="reg-log" name="reg-log" />
+						<label for="reg-log"></label>
+						<div class="card-3d-wrap mx-auto" style="height: 800px;">
+							<div class="card-3d-wrapper">
+								<div class="card-front">
+									<div class="center-wrap">
+										<div class="section text-center">
+											<h4 class="mb-4 pb-3">Log In</h4>
+											<form action="php/login.php" method="post">
+											<div class="form-group">
+												<input type="email" name="email" class="form-style"
+													placeholder="Your Email" id="email" autocomplete="off" required>
+												<i class="input-icon uil uil-at"></i>
+											</div>
+											<div class="form-group mt-2">
+												<input type="password" name="password" class="form-style"
+													placeholder="Your Password" id="password" autocomplete="off" required>
+												<i class="input-icon uil uil-lock-alt"></i>
+											</div>
+											<button type="submit" name="login" class="btn mt-4">submit</button>
+											<p class="mb-0 mt-4 text-center"><a href="#0" class="link">Forgot your
+													password?</a></p>
+												</form>
+										</div>
+									</div>
+								</div>
+								<div class="card-back">
+									<div class="center-wrap">
+										<div class="section text-center">
+											<h4 class="mb-4 pb-3">Sign Up</h4>
+											<form action="php/reg.php" method="post">
+												<!--form for sign up-->
+												<div class="form-group">
+													<input type="text" name="fname" class="form-style"
+														placeholder=" First Name" id="fname" autocomplete="off"
+														required>
+													<i class="input-icon uil uil-user"></i>
+												</div>
+												<div class="form-group mt-2">
+													<input type="text" name="lname" class="form-style" 
+														placeholder=" Last  Name" id="lname" autocomplete="off"
+														required>
+													<i class="input-icon uil uil-user"></i>
+												</div>
+												<div class="form-group mt-2">
+													<select class="form-style" id="gender" name="gender" required>
+														<option disabled selected>Gender</option>
+														<option value="Male">Male</option>
+														<option value="Female">Female</option>
+														<option value="Other">Other</option>
+													</select>
+													<i class="input-icon uil uil-user"></i>
+												</div>
+												
+												
+												
+												<div class="form-group mt-2">
+													<input type="date" name="dob" class="form-style"
+														placeholder=" Date Of Birth" id="dob" autocomplete="off"
+														required>
+													<i class="input-icon uil uil-user"></i>
+												</div>
+												<div class="form-group mt-2">
+													<input type="email" name="email" class="form-style"
+														placeholder=" Email" id="email" autocomplete="off" required>
+													<i class="input-icon uil uil-at"></i>
+												</div>
+												<div class="form-group mt-2">
+													<input type="password" name="password" class="form-style"
+														placeholder=" Password" id="password" autocomplete="off"
+														required>
+													<i class="input-icon uil uil-lock-alt"></i>
+												</div>
+												<div class="form-group mt-2">
+													<input type="password" name="con_password" class="form-style"
+														placeholder="Confirm Password" id="con_password" autocomplete="off"
+														required>
+													<i class="input-icon uil uil-lock-alt"></i>
+												</div>
+												<div class="form-group mt-2">
+													<input type="number" name="num" class="form-style"
+														placeholder="Your Phone Number" id="num" autocomplete="off"
+														required>
+													<i class="input-icon uil uil-phone-alt"></i>
+												</div>
+												<!--<div class="form-group mt-2">
+													<input type="number" name="logpin" class="form-style"
+														placeholder="Your PinCode" id="logpin" autocomplete="off"
+														required>
+													<i class="input-icon uil uil-envelope-alt"></i>
+												</div>-->
+												<div class="form-group mt-2">
+													<input type="number" name="logaadhar" class="form-style"
+														placeholder="Enter Your Aadhar Number" id="logaadhar" autocomplete="off"
+														required>
+													<i class="input-icon uil uil-envelope-alt"></i>
+												</div>
+												<button type="submit" name="reg" class="btn mt-4">submit</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- partial -->
+
+</body>
+
+</html>
